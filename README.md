@@ -13,3 +13,15 @@ Return `{status: "INSUFFICIENT_FUNDS", change: []}` if cash-in-drawer is less th
 Return `{status: "CLOSED", change: [...]}` with cash-in-drawer as the value for the key `change` if it is equal to the change due.
 
 Otherwise, return `{status: "OPEN", change: [...]}`, with the change due in coins and bills, sorted in highest to lowest order, as the value of the `change` key.
+
+| Currency Unit       |       Amount       |
+|---------------------|:------------------:|
+| Penny               |    $0.01 (PENNY)   |
+| Nickel              |   $0.05 (NICKEL)   |
+| Dime                |     $0.1 (DIME)    |
+| Quarter             | $0.25 (QUARTER)    |
+| Dollar              | $1 (DOLLAR)        |
+| Five Dollars        | $5 (FIVE)          |
+| Ten Dollars         | $10 (TEN)          |
+| Twenty Dollars      | $20 (TWENTY)       |
+| One-hundred Dollars | $100 (ONE HUNDRED) |
